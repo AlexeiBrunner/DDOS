@@ -2,7 +2,7 @@
 
     namespace Api\Middleware;
 
-    use App\Models\BlockedIp;
+    use App\Models\BannedIp;
 
     trait DDOS
     {
@@ -14,7 +14,7 @@
             $currentDate = new \DateTime();
             $currentDateFormat = $currentDate->format('Y-m-d H:i:s');
 
-            $blockIpModel = new BlockedIp();
+            $blockIpModel = new BannedIp();
             $blockIpModel->where(['ip' => $ip])->load();
 
             if ($blockIpModel->id) {

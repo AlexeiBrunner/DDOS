@@ -8,7 +8,7 @@
         private $host = 'localhost';
         private $user = 'root';
         private $pass = '';
-        private $database = 'ddos';
+        private $database = '';
 
         private static $instance = null;
         private $conn;

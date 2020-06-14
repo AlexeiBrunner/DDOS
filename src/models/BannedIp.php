@@ -2,7 +2,7 @@
 
     namespace App\Models;
 
-    class BlockedIp extends Model
+    class BannedIp extends Model
     {
         public $table = 'banned_ips';
 
